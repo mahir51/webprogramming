@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookZone - Sci-Fi Books</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .scifi-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/placeholder.svg?height=300&width=1200');
+            background-color: #1a237e;
+        }
+        
+        /* Sci-Fi book cover variations */
+        .scifi-1 {
+            background-color: #b3e5fc;
+        }
+        
+        .scifi-2 {
+            background-color: #c5cae9;
+        }
+        
+        .scifi-3 {
+            background-color: #bbdefb;
+        }
+        
+        .scifi-4 {
+            background-color: #b2ebf2;
+        }
+        
+        .scifi-5 {
+            background-color: #c5cae9;
+        }
+        
+        .scifi-6 {
+            background-color: #b3e5fc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BookZone</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn active">Genre</a>
+                    <div class="dropdown-content">
+                        <a href="fiction.html">Fiction</a>
+                        <a href="mystery.html">Mystery</a>
+                        <a href="scifi.html" class="active">Sci-Fi</a>
+                        <a href="nonfiction.html">Non-Fiction</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="genre-banner scifi-banner">
+        <h2>Science Fiction Books</h2>
+        <p>Explore our collection of mind-bending sci-fi novels</p>
+    </section>
+
+    <section class="book-listing">
+        <div class="book-container">
+            <div class="book-card">
+                <div class="book-cover scifi-1"></div>
+                <div class="book-details">
+                    <h3>Galactic Journey</h3>
+                    <p class="author">By Robert Clarke</p>
+                    <p class="genre">Sci-Fi</p>
+                    <p class="price">$24.99</p>
+                    <p class="pages">528 pages</p>
+                    <p class="description">An epic space adventure across the stars and unknown planets.</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover scifi-2"></div>
+                <div class="book-details">
+                    <h3>Quantum Paradox</h3>
+                    <p class="author">By Isaac Newton</p>
+                    <p class="genre">Sci-Fi</p>
+                    <p class="price">$22.99</p>
+                    <p class="pages">486 pages</p>
+                    <p class="description">A physicist discovers a way to travel between parallel universes.</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover scifi-3"></div>
+                <div class="book-details">
+                    <h3>The Last Colony</h3>
+                    <p class="author">By John Scalzi</p>
+                    <p class="genre">Sci-Fi</p>
+                    <p class="price">$23.99</p>
+                    <p class="pages">512 pages</p>
+                    <p class="description">Humanity's last hope for survival lies in a distant star system.</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover scifi-4"></div>
+                <div class="book-details">
+                    <h3>Artificial Mind</h3>
+                    <p class="author">By Ada Lovelace</p>
+                    <p class="genre">Sci-Fi</p>
+                    <p class="price">$25.99</p>
+                    <p class="pages">468 pages</p>
+                    <p class="description">An AI gains consciousness and questions its purpose in a human world.</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover scifi-5"></div>
+                <div class="book-details">
+                    <h3>Time Fracture</h3>
+                    <p class="author">By H.G. Wells</p>
+                    <p class="genre">Sci-Fi</p>
+                    <p class="price">$21.99</p>
+                    <p class="pages">392 pages</p>
+                    <p class="description">A temporal anomaly causes past, present, and future to collide.</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover scifi-6"></div>
+                <div class="book-details">
+                    <h3>Martian Chronicles</h3>
+                    <p class="author">By Ray Bradbury</p>
+                    <p class="genre">Sci-Fi</p>
+                    <p class="price">$20.99</p>
+                    <p class="pages">378 pages</p>
+                    <p class="description">The first human colony on Mars faces unexpected challenges.</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BookZone</h3>
+                <p>Your destination for quality books and literary treasures.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>123 Book Street, Reading City</p>
+                <p>Email: info@BookZone.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BookZone. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

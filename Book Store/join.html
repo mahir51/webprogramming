@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven - Join Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .join-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .join-hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .join-hero h2 {
+            font-size: 2.5rem;
+            color: #5c2e91;
+            margin-bottom: 20px;
+        }
+        
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .benefit-card {
+            flex: 1;
+            min-width: 250px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #f0e6fa;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #5c2e91;
+            font-size: 2rem;
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.3rem;
+            color: #5c2e91;
+            margin-bottom: 15px;
+        }
+        
+        .membership-plans {
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        .membership-plans h3 {
+            font-size: 2rem;
+            color: #5c2e91;
+            margin-bottom: 40px;
+        }
+        
+        .plans-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .plan-card {
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .plan-header {
+            background-color: #5c2e91;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .plan-name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .plan-price {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .plan-duration {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .plan-features {
+            padding: 30px;
+        }
+        
+        .plan-features ul {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .plan-features li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .plan-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #5c2e91;
+            font-weight: bold;
+        }
+        
+        .premium-plan .plan-header {
+            background-color: #9c27b0;
+        }
+        
+        .premium-plan .plan-features li:before {
+            color: #9c27b0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BookHaven</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Genre</a>
+                    <div class="dropdown-content">
+                        <a href="fiction.html">Fiction</a>
+                        <a href="mystery.html">Mystery</a>
+                        <a href="romance.html">Romance</a>
+                        <a href="scifi.html">Sci-Fi</a>
+                        <a href="nonfiction.html">Non-Fiction</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="join.html" class="active">Join Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="join-section">
+        <div class="join-hero">
+            <h2>Join Our Book Club</h2>
+            <p>Become a member and enjoy exclusive benefits and special offers</p>
+        </div>
+        
+        <div class="benefits">
+            <div class="benefit-card">
+                <div class="benefit-icon">%</div>
+                <h3>Member Discounts</h3>
+                <p>Enjoy exclusive discounts on all book purchases and special promotions throughout the year.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">★</div>
+                <h3>Early Access</h3>
+                <p>Get early access to new releases and limited edition books before they're available to the public.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">♥</div>
+                <h3>Community Events</h3>
+                <p>Join our monthly book club meetings, author signings, and other exclusive community events.</p>
+            </div>
+        </div>
+        
+        <div class="membership-plans">
+            <h3>Choose Your Membership Plan</h3>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h4 class="plan-name">Basic</h4>
+                        <div class="plan-price">$5.99</div>
+                        <div class="plan-duration">per month</div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>10% discount on all purchases</li>
+                            <li>Monthly newsletter</li>
+                            <li>Access to book club meetings</li>
+                            <li>Birthday discount</li>
+                        </ul>
+                        <a href="#" class="btn">Join Now</a>
+                    </div>
+                </div>
+                <div class="plan-card premium-plan">
+                    <div class="plan-header">
+                        <h4 class="plan-name">Premium</h4>
+                        <div class="plan-price">$12.99</div>
+                        <div class="plan-duration">per month</div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>20% discount on all purchases</li>
+                            <li>Free shipping on all orders</li>
+                            <li>Early access to new releases</li>
+                            <li>Exclusive author events</li>
+                            <li>Free book every quarter</li>
+                            <li>Premium reading recommendations</li>
+                        </ul>
+                        <a href="#" class="btn">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BookHaven</h3>
+                <p>Your destination for quality books and literary treasures.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>123 Book Street, Reading City</p>
+                <p>Email: info@bookhaven.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BookHaven. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

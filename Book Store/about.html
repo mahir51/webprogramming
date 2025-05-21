@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookZone - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .about-hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .about-hero h2 {
+            font-size: 2.5rem;
+            color: #5c2e91;
+            margin-bottom: 20px;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            height: 300px;
+            background-color: #e0e0e0;
+            background-image: url('/placeholder.svg?height=300&width=300');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+        
+        .team-section {
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        .team-section h3 {
+            font-size: 2rem;
+            color: #5c2e91;
+            margin-bottom: 40px;
+        }
+        
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .team-member {
+            width: 220px;
+            text-align: center;
+        }
+        
+        .member-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #e0e0e0;
+            margin: 0 auto 15px;
+            background-image: url('/placeholder.svg?height=150&width=150');
+            background-size: cover;
+        }
+        
+        .member-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .member-role {
+            color: #5c2e91;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BookZone</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Genre</a>
+                    <div class="dropdown-content">
+                        <a href="fiction.html">Fiction</a>
+                        <a href="mystery.html">Mystery</a>
+                        <a href="scifi.html">Sci-Fi</a>
+                        <a href="nonfiction.html">Non-Fiction</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <div class="about-hero">
+            <h2>About BookZone</h2>
+            <p>Your destination for quality books and literary treasures since 2010</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <p>BookZone was founded in 2010 by a group of passionate book lovers who wanted to create a space where readers could discover new worlds through literature. What started as a small corner bookshop has now grown into one of the most beloved bookstores in the country.</p>
+                <p>Our mission is to promote literacy, foster a love for reading, and provide a curated selection of books across all genres. We believe that books have the power to educate, inspire, and transform lives.</p>
+                <p>At BookZone, we pride ourselves on our knowledgeable staff, personalized recommendations, and community events that bring readers together. Whether you're a casual reader or a dedicated bibliophile, we have something for everyone.</p>
+                
+                <h3>What Sets Us Apart</h3>
+                <p>Unlike large chain bookstores, we carefully select each title in our collection. Our team reads and reviews books before they hit our shelves, ensuring that we offer only the highest quality literature to our customers.</p>
+                <p>We also host regular author events, book clubs, and reading workshops to engage with our community and create a space where ideas can be shared and discussed.</p>
+            </div>
+            <div class="about-image">
+                <img src="/image-2.png" alt="">
+            </div>
+        </div>
+        
+        <div class="team-section">
+            <h3>Meet Our Team</h3>
+            <div class="team-container">
+                <div class="team-member">
+                    <div class="member-image">
+                    </div>
+                    <h4 class="member-name">Sarah Johnson</h4>
+                    <p class="member-role">Founder & CEO</p>
+                    <p>Book lover with a passion for mystery novels and classic literature.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image"></div>
+                    <h4 class="member-name">Michael Roberts</h4>
+                    <p class="member-role">Head of Fiction</p>
+                    <p>Literary critic and author with expertise in contemporary fiction.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image"></div>
+                    <h4 class="member-name">Emily Chen</h4>
+                    <p class="member-role">Children's Literature Specialist</p>
+                    <p>Former teacher with a love for children's books and young adult fiction.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image"></div>
+                    <h4 class="member-name">David Thompson</h4>
+                    <p class="member-role">Events Coordinator</p>
+                    <p>Community builder who organizes our book clubs and author events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BookZone</h3>
+                <p>Your destination for quality books and literary treasures.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>123 Book Street, Reading City</p>
+                <p>Email: info@BookZone.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BookZone. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

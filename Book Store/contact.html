@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookZone - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .contact-hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .contact-hero h2 {
+            font-size: 2.5rem;
+            color: #5c2e91;
+            margin-bottom: 20px;
+        }
+        
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.5rem;
+            color: #5c2e91;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+        
+        .contact-info .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #5c2e91;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        
+        .store-hours {
+            margin-top: 30px;
+        }
+        
+        .store-hours h4 {
+            font-size: 1.2rem;
+            color: #5c2e91;
+            margin-bottom: 15px;
+        }
+        
+        .hours-list {
+            list-style: none;
+        }
+        
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .day {
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BookZone</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Genre</a>
+                    <div class="dropdown-content">
+                        <a href="fiction.html">Fiction</a>
+                        <a href="mystery.html">Mystery</a>
+                        <a href="scifi.html">Sci-Fi</a>
+                        <a href="nonfiction.html">Non-Fiction</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-hero">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Get in touch with our team.</p>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="order">Order Status</option>
+                            <option value="book">Book Recommendation</option>
+                            <option value="event">Event Information</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <div class="info-icon"></div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 Book Street<br>Reading City, RC 12345</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"></div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>(123) 456-7890</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"></div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@BookZone.com</p>
+                    </div>
+                </div>
+                
+                <div class="store-hours">
+                    <h4>Store Hours</h4>
+                    <ul class="hours-list">
+                        <li>
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">9:00 AM - 8:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Saturday</span>
+                            <span class="time">10:00 AM - 6:00 PM</span>
+                        </li>
+                        <li>
+                            <span class="day">Sunday</span>
+                            <span class="time">12:00 PM - 5:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BookZone</h3>
+                <p>Your destination for quality books and literary treasures.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>123 Book Street, Reading City</p>
+                <p>Email: info@BookZone.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BookZone. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
